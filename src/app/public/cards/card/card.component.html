@@ -1,0 +1,18 @@
+<div class="card shadow text-center" [ngStyle]="{'background': card?card.color:'blue'}">
+  <div class="card-body">
+    <span class="fs-1">{{card?.type}}</span>
+  </div>
+  <div>
+    <p>
+      <em><strong>{{card?.totalQuiz}} Questions covering the basics of {{card?.type}}</strong></em>
+      <br>
+      <small>Duration: {{card?.duration}} {{card?.UOM}}</small>
+    </p>
+  </div>
+  <div class="row justify-content-center align-items-center g-2 m-2">
+    <div class="col-4">
+      <a href="quiztest.asp?qtest=JS" class="btn btn-success btn-lg rounded-pill">Start Quiz</a>
+    </div>
+  </div>
+
+</div>
